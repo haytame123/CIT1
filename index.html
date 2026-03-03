@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CIT - Dark Hacker Edition</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <div class="logo-circle">
+            <span>CIT</span>
+        </div>
+        <div class="logo-text">
+            <h1>Club Informatique & Télécommunications</h1>
+            <p>INPT - Innovation | Sécurité | Technologie</p>
+        </div>
+    </div>
+
+    <nav>
+        <button class="nav-btn active" data-page="home">Accueil</button>
+        <button class="nav-btn" data-page="about">À propos</button>
+        <button class="nav-btn" data-page="activities">Activités</button>
+        <button class="nav-btn" data-page="gallery">Galerie</button>
+        <button class="nav-btn" data-page="team">Équipe</button>
+        <button class="nav-btn" data-page="partners">Partenaires</button>
+        <button class="nav-btn" data-page="register">Inscription</button>
+    </nav>
+</header>
+
+<main>
+
+<!-- HOME -->
+<section id="home" class="page active">
+    <div class="hero">
+        <h2>Welcome to the Future of Technology</h2>
+        <p>
+        Le CIT est un laboratoire d’innovation où les étudiants passionnés
+        développent des compétences avancées en cybersécurité, développement,
+        intelligence artificielle et télécommunications.
+        Nous créons les ingénieurs de demain.
+        </p>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="page">
+    <h2>Notre Vision</h2>
+    <p>
+    Le CIT ambitionne de devenir le club technologique leader à l’INPT.
+    Nous formons nos membres à travers des projets réels, des compétitions
+    nationales et des workshops spécialisés.
+    </p>
+</section>
+
+<!-- ACTIVITIES -->
+<section id="activities" class="page">
+    <h2>Domaines d’Excellence</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>💻 Développement Avancé</h3>
+            <p>Web, Mobile, IA, projets full-stack.</p>
+        </div>
+        <div class="card">
+            <h3>🔐 Cybersécurité</h3>
+            <p>Ethical hacking, audit sécurité, CTF.</p>
+        </div>
+        <div class="card">
+            <h3>📡 Réseaux & Télécom</h3>
+            <p>Infrastructure, Cisco, sécurité réseau.</p>
+        </div>
+    </div>
+</section>
+
+<!-- GALERIE INPT -->
+<section id="gallery" class="page">
+    <h2>Galerie INPT</h2>
+    <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1">
+        <img src="https://images.unsplash.com/photo-1519455953755-af066f52f1ea">
+        <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b">
+    </div>
+</section>
+
+<!-- TEAM -->
+<section id="team" class="page">
+    <h2>Notre Équipe</h2>
+    <p>
+    Une équipe dynamique composée d’étudiants talentueux,
+    motivés et engagés dans l’excellence technologique.
+    </p>
+</section>
+
+<!-- PARTNERS -->
+<section id="partners" class="page">
+    <h2>Nos Partenaires</h2>
+    <p>
+    Nous collaborons avec des entreprises technologiques
+    pour offrir à nos membres des opportunités professionnelles.
+    </p>
+</section>
+
+<!-- REGISTER -->
+<section id="register" class="page">
+    <h2>Rejoindre le CIT</h2>
+    <form id="registerForm">
+        <input type="text" id="firstName" placeholder="Prénom">
+        <input type="text" id="lastName" placeholder="Nom">
+        <input type="email" id="email" placeholder="Email">
+        <input type="tel" id="phone" placeholder="Téléphone">
+        <select id="level">
+            <option value="">Année d'étude</option>
+            <option>1ère année</option>
+            <option>2ème année</option>
+            <option>3ème année</option>
+        </select>
+        <textarea id="motivation" placeholder="Votre motivation"></textarea>
+        <input type="file" id="photo">
+        <button type="submit">Postuler</button>
+        <p id="formMessage"></p>
+    </form>
+</section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
