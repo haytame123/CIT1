@@ -1,0 +1,99 @@
+body {
+margin:0;
+font-family:Arial, sans-serif;
+background: url("https://images.unsplash.com/photo-1518779578993-ec3579fee39f") no-repeat center center fixed;
+background-size:cover;
+color:#00ffcc;
+}
+
+header {
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px;
+background:rgba(0,0,0,0.8);
+}
+
+.logo-circle {
+width:70px;
+height:70px;
+border:3px solid #00ffcc;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+box-shadow:0 0 20px #00ffcc;
+font-weight:bold;
+}
+
+nav button {
+background:none;
+border:none;
+color:#00ffcc;
+margin:5px;
+cursor:pointer;
+}
+
+nav button.active,
+nav button:hover {
+color:white;
+}
+
+.page {
+display:none;
+padding:50px;
+background:rgba(0,0,0,0.75);
+min-height:80vh;
+}
+
+.page.active {
+display:block;
+}
+
+.cards {
+display:flex;
+gap:20px;
+}
+
+.card {
+background:rgba(0,255,200,0.1);
+padding:20px;
+border:1px solid #00ffcc;
+transition:0.3s;
+}
+
+.card:hover {
+transform:translateY(-10px);
+box-shadow:0 0 20px #00ffcc;
+}
+
+.gallery {
+display:flex;
+gap:15px;
+}
+
+.gallery img {
+width:30%;
+border-radius:10px;
+}
+
+form {
+display:flex;
+flex-direction:column;
+max-width:400px;
+}
+
+form input, form select, form textarea {
+margin-bottom:15px;
+padding:10px;
+background:black;
+color:#00ffcc;
+border:1px solid #00ffcc;
+}
+
+form button {
+background:#00ffcc;
+border:none;
+padding:10px;
+cursor:pointer;
+}
